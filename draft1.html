@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giphy-API</title>
+    <link rel="stylesheet" type="text/css" href="assets/reset.css">
+    <style>
+        body{
+            padding: 10px;
+        }
+        .topic-buttons{
+            height: 50px;
+            border-width: 2px;
+            border: solid;
+            border-color: red;
+            padding: 15px;
+        }
+        .display-field{
+            padding: 15px;
+            border: solid;
+            border-color: green;
+            border-width: 1px;
+            width: 65%;
+            float: left;
+        }
+        .search-field{
+            padding: 15px;
+            border-width: 1px;
+            border: solid;
+            border-color: blue;
+            width: 19%;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <!-- div containing giphy categories. Located top of page -->
+        <div class="topic-buttons">topic-buttons</div>
+    <!-- div which will display generated giphs -->
+        <div class="display-field">display-field</div>
+    <!-- side bar containing search field -->
+        <form class="search-field">search-field<input></form>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    // $(document).ready(){}
+
+    // define array for select topics
+    topics = ["animals","dog","cat", "rabbit", "hamster", "skunk", "goldfish", "bird", "ferret"]
+    // run a loop to create buttons for each topic category 
+    for(var i = 0; i <= topics.length; i++){
+        $(".topic-buttons").append("<button class='topic'>"+ topics[i] +"</button>");
+    }
+    // div to display searched gifs and on click plays or stops gif
+
+    // search form for user entered topic which adds to the array
+
+
+
+
+    </script>
+
+</body>
+</html>
