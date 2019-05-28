@@ -50,17 +50,33 @@
     crossorigin="anonymous"></script>
     <script type="text/javascript">
     // $(document).ready(){}
-
+    // GIPHY API key 
+    var apiKey = "eJS4WvyhxtAfE3V3tJCZoBYbsrvGQ446";
+    var queryURL = "";
+    
+    var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key="+apiKey);
+    xhr.done(function(data) { 
+        console.log("success got data", data); 
+        console.log(data[0]);
+    });
+    
+    $(".display-field").text(JSON.parse(xhr));
     // define array for select topics
-    topics = ["animals","dog","cat", "rabbit", "hamster", "skunk", "goldfish", "bird", "ferret"]
+    topics = ["animals","dog","cat", "rabbit", "hamster", "skunk", "goldfish", "bird", "ferret"];
     // run a loop to create buttons for each topic category 
     for(var i = 0; i <= topics.length; i++){
         $(".topic-buttons").append("<button class='topic'>"+ topics[i] +"</button>");
     }
     // div to display searched gifs and on click plays or stops gif
-
+    // $.ajax({
+    //     url: queryURL,
+    //     method: "GET"
+    // }).then(function(response){
+    //     console.log(response)
+    //     $(".display-field").text(JSON.stringyfy(response.data));
+    // });
+    
     // search form for user entered topic which adds to the array
-
 
 
 
