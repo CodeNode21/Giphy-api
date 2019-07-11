@@ -49,49 +49,25 @@
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
     <script type="text/javascript">
-    // $(document).ready(){}
-    // GIPHY API key 
-    var apiKey = "eJS4WvyhxtAfE3V3tJCZoBYbsrvGQ446";
-    var search = "cats";
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + search +"&api_key="+apiKey;
-    
-    var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key="+apiKey);
-    xhr.done(function(data) { 
-        console.log("success got data", data); 
-        for(var i = 0; i < data.data.length; i++){
-        console.log(data.data[i].images.original.url);
-    }
-    }).then(function(response){
-        var gif = 
-    })
-    
-    $(".display-field").text(JSON.stringify(xhr));
-    // define array for select topics
-    topics = ["animals","dog","cat", "rabbit", "hamster", "skunk", "goldfish", "bird", "ferret"];
-    // run a loop to create buttons for each topic category 
-    for(var i = 0; i <= topics.length; i++){
-        $(".topic-buttons").append("<button class='topic'>"+ topics[i] +"</button>");
-    }
+    // js below
+    $(document).ready(function() {
 
-    function setup(){
-        noCanvas();
-        var url = queryURL;
-        loadJSON(url, gotData);
-    }
-    function gotData(data) {
-        println(data);
-    }
-    
-    // div to display searched gifs and on click plays or stops gif
-    // $.ajax({
-    //     url: queryURL,
-    //     method: "GET"
-    // }).then(function(response){
-    //     console.log(response)
-    //     $(".display-field").text(JSON.stringyfy(response.data));
-    // });
-    
-    // search form for user entered topic which adds to the array
+        // function to set up starter buttons for search terms from array
+
+        // function to assign starter button clicks to search terms
+
+        // function assigning  
+
+        // function running the ajax request with the search term
+            //
+
+
+        //
+
+
+
+
+    })
 
 
 
