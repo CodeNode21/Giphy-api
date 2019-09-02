@@ -22,6 +22,7 @@ $(document).on("click", "button", function(){
     var topic = $(this).html();
     var queryURL = "https://api.giphy.com/v1/gifs/search?q="+topic+"&api_key="+apiKey+"&limit=10"
     console.log(topic);
+    console.log(queryURL);
 
     $.ajax({
         url: queryURL,

@@ -1,5 +1,5 @@
 body{
-    background: url("/assets/images/email-pattern.png");
+    background: url("../images/email-pattern.png");
 }
 .container{
     margin-top: 3em;
