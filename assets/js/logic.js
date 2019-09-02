@@ -20,7 +20,7 @@ $(document).on("click", "button", function(){
     // GIPHY API key
     var apiKey = "eJS4WvyhxtAfE3V3tJCZoBYbsrvGQ446";
     var topic = $(this).html();
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q="+topic+"&api_key="+apiKey+"&limit=10"
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q="+topic+"&api_key="+apiKey+"&limit=10"
     console.log(topic);
 
     $.ajax({
