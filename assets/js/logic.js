@@ -20,11 +20,17 @@ $(document).on("click", "button", function(){
     // GIPHY API key
     var apiKey = "eJS4WvyhxtAfE3V3tJCZoBYbsrvGQ446";
     var topic = $(this).html();
+    var queryURL = "http://api.giphy.com/v1/gifs/search?q="+topic+"&api_key="+apiKey+"&limit=10"
     console.log(topic);
-    var xhr = $.get("http://api.giphy.com/v1/gifs/search?q="+topic+"&api_key="+apiKey+"&limit=10");
-    xhr.done(function(data) { 
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    })
+      .then(function(data){
         console.log("success got data", data.data);
         var results = data.data;
+        
         for(var i = 0; i < results.length; i++){
             var giphField = $("<div class='giphs'>");
             var giph = data.data[i].images.downsized.url;
@@ -36,5 +42,7 @@ $(document).on("click", "button", function(){
 
         $("#giph-field").append(giphField);
         }
-    });
+
+      })
+
 })
