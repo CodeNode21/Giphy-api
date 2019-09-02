@@ -1,3 +1,4 @@
+
 // Topics array and buttons
 var topics = ["Tennis", "Soccer", "NBA", "MLB", "NFL", "UFC", "WWE", "NCAA", "PGA", "Rugby"];
 var btn_type= ["primary", "secondary", "success", "danger", "warning", "info", "light", "dark", "info", "light", "dark"];
