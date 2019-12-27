@@ -1,5 +1,5 @@
 # Giphy-api
-Giphy search and display.
+Giphy search and display with a sports theme.
 
 https://codenode21.github.io/Giphy-api/
 
