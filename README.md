@@ -1,7 +1,7 @@
 # Giphy-api
 Giphy search and display with a sports theme.
 
-![Link](https://codenode21.github.io/Giphy-api/)
+[Link](https://codenode21.github.io/Giphy-api/)
 
 On this page we have an easy pull of sporty giphs - powered by GIPHY.com
 
